@@ -40,6 +40,6 @@ app.post('/profile/:id',  (req, res) => {profile.handleProfileUpdate(req, res, k
 app.put('/image', (req, res) => {image.handleImage(req, res, knex)})
 
 
-app.listen(3000, () => {
+app.listen('https://face-detection-node.onrender.com/', () => {
     console.log("app running in port 3000")
 })
